@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SimpleEvent">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vertex&lt;T&gt;" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Engine\DAG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceJump" Collapsed="true">
+    <Position X="12.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceUpdate" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQACEAAAAAAgAAAAAAhAAAAAACABAEAAAIgAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sentiment" Collapsed="true">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedNegative" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedNegativeBasicStory" Collapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedNegativeWithNewsUpdate" Collapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedPositive" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedPositiveBasicStory" Collapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedPositiveWithNewsUpdate" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceFall" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryChange" Collapsed="true">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryData" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAASAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryMinus" Collapsed="true">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryPlus" Collapsed="true">
+    <Position X="9" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdate" Collapsed="true">
+    <Position X="17.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAkIEgAIEAAAAAAAAGggQCAAEAgCAFIAAACCAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdateChange" Collapsed="true">
+    <Position X="8" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAYAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdateMinus" Collapsed="true">
+    <Position X="6.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdatePlus" Collapsed="true">
+    <Position X="9" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectDumper" Collapsed="true">
+    <Position X="20" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgkAAACQAAAgAAAAAAAEgQAEQAAACAAgAAEAAAEAAAA=</HashCode>
+      <FileName>Engine\ObjectDumper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectExtension" Collapsed="true">
+    <Position X="21.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parser" Collapsed="true">
+    <Position X="20" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQJBEABABAAAAACAgAAAAACIDAABQIAEAAAACBKIDE=</HashCode>
+      <FileName>Engine\Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern" Collapsed="true">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Pattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChange" Collapsed="true">
+    <Position X="15.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSVReader" Collapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAQAAgAABAAAAAAAAAAAAAAAQAgAAAAAA=</HashCode>
+      <FileName>Engine\CSVReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAG&lt;T&gt;" Collapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Engine\DAG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edge&lt;T&gt;" Collapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAEAAAIA=</HashCode>
+      <FileName>Engine\DAG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Engine" Collapsed="true">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0ACiwIyACUJAiaSEAwAaiEGgiYiBghyCJDBEFQIWEzA=</HashCode>
+      <FileName>Engine\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventConfig" Collapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStory" Collapsed="true">
+    <Position X="20.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.BaseDataAccess" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAQAAAAAAAA=</HashCode>
+      <FileName>Engine\DAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.DataAccess" Collapsed="true">
+    <Position X="17.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAEAQggAACCAAQAAAAAAgAAAAAAAAAAQIAEAEAwAAA=</HashCode>
+      <FileName>Engine\DAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActivePatterns">
+    <Position X="34.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Pattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicStory" Collapsed="true">
+    <Position X="25.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComplexEvent" Collapsed="true">
+    <Position X="33.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEPSite.AccordTest" Collapsed="true">
+    <Position X="36.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AccordTest.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEPSite.Default" Collapsed="true">
+    <Position X="38" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hoWGwB7MCxNAkOQGBYCyhGAgocjjCFGyKwZcVGobGxI=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEPSite.Buffer" Collapsed="true">
+    <Position X="39.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAACAAAIAIAAgAAAAAAAAAAAAQACAA=</HashCode>
+      <FileName>Engine\Buffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEPSite.Buffer_Overlay" Collapsed="true">
+    <Position X="36.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAACAAAIAAAAgAAAAAAAAAAAAQACAA=</HashCode>
+      <FileName>Engine\Buffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.FrameSamples" Collapsed="true">
+    <Position X="39.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Deedle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.SeriesSamples" Collapsed="true">
+    <Position X="36.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAABAAAAAAAA=</HashCode>
+      <FileName>Deedle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="STORY_TYPES" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SENTIMENT_TYPES" Collapsed="true">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EVENT_TYPES" Collapsed="true">
+    <Position X="23.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAQAAAAAAAAAAAAAACAAAAAAAAIAQAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PriceChangedPositive" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedPositiveBasicStory" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChangedPositiveWithNewsUpdate" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>obj\NewsPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceFall" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceJump" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceUpdate" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQACEAAAAAAgAAAAAAhAAAAAACABAEAAAIgAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sentiment" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleEvent" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChange" Collapsed="true">
+    <Position X="17.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SENTIMENT_TYPES" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

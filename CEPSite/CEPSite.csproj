@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9CC0930-1E05-49C8-B3F7-B992050146A0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CEPSite</RootNamespace>
+    <AssemblyName>CEPSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.3.8.0\lib\net45\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Controls, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Controls.3.8.0\lib\net45\Accord.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.MachineLearning.3.8.0\lib\net45\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning.GPL, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.MachineLearning.GPL.3.8.0\lib\net45\Accord.MachineLearning.GPL.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Math.3.8.0\lib\net45\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Math.3.8.0\lib\net45\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Statistics.3.8.0\lib\net45\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Deedle, Version=1.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Deedle.1.2.5\lib\net40\Deedle.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccordTest.aspx" />
+    <Content Include="Controls Example.html" />
+    <Content Include="css\demo_page.css" />
+    <Content Include="css\demo_table.css" />
+    <Content Include="css\demo_table_jui.css" />
+    <Content Include="css\jquery.dataTables.css" />
+    <Content Include="css\jquery.dataTables_themeroller.css" />
+    <Content Include="css\layout-default-latest.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\back_disabled.png" />
+    <Content Include="Images\back_enabled.png" />
+    <Content Include="Images\back_enabled_hover.png" />
+    <Content Include="Images\Calendar_scheduleHS.png" />
+    <Content Include="Images\clock.png" />
+    <Content Include="Images\collapsed.gif" />
+    <Content Include="Images\expanded.gif" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\forward_disabled.png" />
+    <Content Include="Images\forward_enabled.png" />
+    <Content Include="Images\forward_enabled_hover.png" />
+    <Content Include="Images\ontology.png" />
+    <Content Include="Images\sort_asc.png" />
+    <Content Include="Images\sort_asc_disabled.png" />
+    <Content Include="Images\sort_both.png" />
+    <Content Include="Images\sort_desc.png" />
+    <Content Include="Images\sort_desc_disabled.png" />
+    <Content Include="Libraries\financial-data.js" />
+    <Content Include="Libraries\jquery-ui-timepicker-addon.js" />
+    <Content Include="Libraries\jquery.layout-latest.js" />
+    <Content Include="Libraries\RGraph.bar.js" />
+    <Content Include="Libraries\RGraph.bipolar.js" />
+    <Content Include="Libraries\RGraph.common.annotate.js" />
+    <Content Include="Libraries\RGraph.common.context.js" />
+    <Content Include="Libraries\RGraph.common.core.js" />
+    <Content Include="Libraries\RGraph.common.csv.js" />
+    <Content Include="Libraries\RGraph.common.deprecated.js" />
+    <Content Include="Libraries\RGraph.common.dynamic.js" />
+    <Content Include="Libraries\RGraph.common.effects.js" />
+    <Content Include="Libraries\RGraph.common.key.js" />
+    <Content Include="Libraries\RGraph.common.resizing.js" />
+    <Content Include="Libraries\RGraph.common.tooltips.js" />
+    <Content Include="Libraries\RGraph.common.zoom.js" />
+    <Content Include="Libraries\RGraph.drawing.background.js" />
+    <Content Include="Libraries\RGraph.drawing.circle.js" />
+    <Content Include="Libraries\RGraph.drawing.image.js" />
+    <Content Include="Libraries\RGraph.drawing.marker1.js" />
+    <Content Include="Libraries\RGraph.drawing.marker2.js" />
+    <Content Include="Libraries\RGraph.drawing.marker3.js" />
+    <Content Include="Libraries\RGraph.drawing.poly.js" />
+    <Content Include="Libraries\RGraph.drawing.rect.js" />
+    <Content Include="Libraries\RGraph.drawing.text.js" />
+    <Content Include="Libraries\RGraph.drawing.xaxis.js" />
+    <Content Include="Libraries\RGraph.drawing.yaxis.js" />
+    <Content Include="Libraries\RGraph.fuel.js" />
+    <Content Include="Libraries\RGraph.funnel.js" />
+    <Content Include="Libraries\RGraph.gantt.js" />
+    <Content Include="Libraries\RGraph.gauge.js" />
+    <Content Include="Libraries\RGraph.hbar.js" />
+    <Content Include="Libraries\RGraph.hprogress.js" />
+    <Content Include="Libraries\RGraph.line.js" />
+    <Content Include="Libraries\RGraph.meter.js" />
+    <Content Include="Libraries\RGraph.modaldialog.js" />
+    <Content Include="Libraries\RGraph.odo.js" />
+    <Content Include="Libraries\RGraph.pie.js" />
+    <Content Include="Libraries\RGraph.radar.js" />
+    <Content Include="Libraries\RGraph.rose.js" />
+    <Content Include="Libraries\RGraph.rscatter.js" />
+    <Content Include="Libraries\RGraph.scatter.js" />
+    <Content Include="Libraries\RGraph.thermometer.js" />
+    <Content Include="Libraries\RGraph.vprogress.js" />
+    <Content Include="Libraries\RGraph.waterfall.js" />
+    <Content Include="Libraries\simple-expand.min.js" />
+    <Content Include="License-LGPL.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccordTest.aspx.cs">
+      <DependentUpon>AccordTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccordTest.aspx.designer.cs">
+      <DependentUpon>AccordTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deedle.cs" />
+    <Compile Include="Engine\Buffer.cs" />
+    <Compile Include="Engine\CSVReader.cs" />
+    <Compile Include="Engine\Ontology.cs" />
+    <Compile Include="Engine\DAG.cs" />
+    <Compile Include="Engine\DAL.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Engine.cs" />
+    <Compile Include="Engine\Events.cs" />
+    <Compile Include="Engine\Extensions.cs" />
+    <Compile Include="Engine\NewsEvents.cs" />
+    <Compile Include="obj\NewsPatterns.cs" />
+    <Compile Include="Engine\ObjectDumper.cs" />
+    <Compile Include="Engine\Parser.cs" />
+    <Compile Include="Engine\Pattern.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EventHandler.ashx" />
+    <Content Include="Images\Sorting icons.psd" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="ClassDiagram3.cd" />
+    <Content Include="ClassDiagramArranged.cd" />
+    <Content Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60854</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60854/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.8.0\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

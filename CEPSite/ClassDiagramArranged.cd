@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="CEPSite.Buffer">
+    <Position X="12.25" Y="1.75" Width="2" />
+    <AssociationLine Name="EventBuffer" Type="SimpleEvent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.131" Y="0.268" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAACAAAIAIAAgAAAAAAAAAAAQQACAA=</HashCode>
+      <FileName>Engine\Buffer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="EventBuffer" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CEPSite.Buffer_Overlay">
+    <Position X="13" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAACAAAIAAAAgAAAAAAAABAAAAACAA=</HashCode>
+      <FileName>Engine\Buffer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="EventBuffer" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EventConfig">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleEvent">
+    <Position X="12.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComplexEvent">
+    <Position X="9.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAACAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Engine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAG&lt;T&gt;">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <AssociationLine Name="Vertices" Type="Vertex&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.243" Y="0.19" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Engine\DAG.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Vertices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Vertex&lt;T&gt;">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Engine\DAG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edge&lt;T&gt;">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <AssociationLine Name="NodeFinish" Type="Vertex&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.036" Y="-1.076" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAEAAAIA=</HashCode>
+      <FileName>Engine\DAG.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="NodeStart" />
+      <Field Name="NodeFinish" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PriceUpdate">
+    <Position X="10.75" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQACEAAAAAAgAAAAAAhAAAAAACABAEAAAIgAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sentiment">
+    <Position X="14" Y="14" Width="1.75" />
+    <InheritanceLine Type="SimpleEvent" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.625" Y="7.641" />
+        <Point X="13.625" Y="7.824" />
+        <Point X="13.625" Y="7.824" />
+        <Point X="13.625" Y="15.188" />
+        <Point X="14" Y="15.188" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdate">
+    <Position X="7.75" Y="10.25" Width="2.75" />
+    <InheritanceLine Type="SimpleEvent" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.625" Y="7.641" />
+        <Point X="12.625" Y="9.364" />
+        <Point X="10.708" Y="9.364" Type="JumpStart" />
+        <Point X="10.542" Y="9.364" Type="JumpEnd" />
+        <Point X="9.125" Y="9.364" />
+        <Point X="9.125" Y="10.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAkIEgAIEAAAAAAAAGggQCAAEAgCAFIAAACCAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceChange">
+    <Position X="14.75" Y="10.25" Width="1.5" />
+    <InheritanceLine Type="ComplexEvent" ManuallyRouted="true">
+      <Path>
+        <Point X="10.625" Y="7.578" />
+        <Point X="10.625" Y="8.97" />
+        <Point X="12.542" Y="8.97" Type="JumpStart" />
+        <Point X="12.708" Y="8.97" Type="JumpEnd" />
+        <Point X="13.167" Y="8.97" Type="JumpStart" />
+        <Point X="13.333" Y="8.97" Type="JumpEnd" />
+        <Point X="13.542" Y="8.97" Type="JumpStart" />
+        <Point X="13.708" Y="8.97" Type="JumpEnd" />
+        <Point X="15.5" Y="8.97" />
+        <Point X="15.5" Y="10.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PriceUpdate1" />
+      <Field Name="PriceUpdate2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PriceJump">
+    <Position X="15.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceFall">
+    <Position X="14" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdateChange">
+    <Position X="20" Y="10" Width="1.75" />
+    <AssociationLine Name="PriceJump" Type="PriceJump" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="10.438" />
+        <Point X="19.583" Y="10.438" Type="JumpStart" />
+        <Point X="19.417" Y="10.438" Type="JumpEnd" />
+        <Point X="17.875" Y="10.438" />
+        <Point X="17.875" Y="13.125" />
+        <Point X="17.25" Y="13.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PriceFall" Type="PriceFall" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="10.688" />
+        <Point X="19.583" Y="10.688" Type="JumpStart" />
+        <Point X="19.417" Y="10.688" Type="JumpEnd" />
+        <Point X="18.55" Y="10.688" />
+        <Point X="18.55" Y="13.752" />
+        <Point X="14.875" Y="13.752" />
+        <Point X="14.875" Y="13.483" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="NewsUpdate" Type="NewsUpdate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="10.125" />
+        <Point X="19.803" Y="10.111" />
+        <Point X="19.583" Y="10.111" Type="JumpStart" />
+        <Point X="19.417" Y="10.111" Type="JumpEnd" />
+        <Point X="15.583" Y="10.111" Type="JumpStart" />
+        <Point X="15.417" Y="10.111" Type="JumpEnd" />
+        <Point X="13.708" Y="10.111" Type="JumpStart" />
+        <Point X="13.542" Y="10.111" Type="JumpEnd" />
+        <Point X="11.958" Y="10.111" Type="JumpStart" />
+        <Point X="11.792" Y="10.111" Type="JumpEnd" />
+        <Point X="9.844" Y="10.111" />
+        <Point X="9.844" Y="10.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAYAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PriceJump" />
+      <Field Name="PriceFall" />
+      <Field Name="NewsUpdate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NewsUpdatePlus">
+    <Position X="21" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsUpdateMinus">
+    <Position X="19" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryData">
+    <Position X="18.75" Y="11.75" Width="1.5" />
+    <AssociationLine Name="NewsUpdate1" Type="NewsUpdate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.844" Y="13.627" />
+        <Point X="18.844" Y="17.225" />
+        <Point X="9.188" Y="17.225" />
+        <Point X="9.188" Y="16.165" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAASAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="NewsUpdate1" />
+      <Field Name="NewsUpdate2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NewsStoryChange">
+    <Position X="23" Y="12" Width="1.5" />
+    <AssociationLine Name="PriceUpdate1" Type="PriceUpdate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.312" Y="13.684" />
+        <Point X="23.312" Y="16.64" />
+        <Point X="18.927" Y="16.64" Type="JumpStart" />
+        <Point X="18.761" Y="16.64" Type="JumpEnd" />
+        <Point X="11.875" Y="16.64" />
+        <Point X="11.875" Y="14.05" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PriceUpdate2" Type="PriceUpdate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.875" Y="13.684" />
+        <Point X="23.875" Y="16.929" />
+        <Point X="18.927" Y="16.929" Type="JumpStart" />
+        <Point X="18.761" Y="16.929" Type="JumpEnd" />
+        <Point X="11.5" Y="16.929" />
+        <Point X="11.5" Y="14.05" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PriceUpdate1" />
+      <Field Name="PriceUpdate2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NewsStory">
+    <Position X="17.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryPlus">
+    <Position X="22" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsStoryMinus">
+    <Position X="23.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern&lt;T&gt;">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Engine\Pattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActivePatterns&lt;T&gt;">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Pattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ontology.SemanticType">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAAAAQAAABFAgAAQQIAAAAAAAA=</HashCode>
+      <FileName>Engine\Ontology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ontology.SemanticObject">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAABBAABAAAAAAACAAAABAAA=</HashCode>
+      <FileName>Engine\Ontology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ontology.Element">
+    <Position X="3.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Ontology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ontology.Node" Collapsed="true">
+    <Position X="3.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Ontology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ontology.SE" Collapsed="true">
+    <Position X="2.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Ontology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ontology.SF" Collapsed="true">
+    <Position X="4.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Ontology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EVENT_TYPES">
+    <Position X="19" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAQAAAAAAAAAAAAAACAAAAAAAAIAQAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SENTIMENT_TYPES">
+    <Position X="20.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="STORY_TYPES">
+    <Position X="20.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Engine\NewsEvents.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
